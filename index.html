@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+
+<!-- HTML5 Hello world by kirupa - http://www.kirupa.com/html5/getting_your_feet_wet_html5_pg1.htm -->
+<html>
+    <head> <!-- 헤드부분은 눈에 직접보이지 않는 부분이라고 이해하면 된다 -->
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <title>이종진의 첫번째 여행 지도</title>
+        
+        <!-- 아이콘뜨게 하는 코드 -->
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"> 
+        
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+        
+	    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+        
+        <!-- Side bar Theme -->  <!-- 아랫쪽에 위치한 코드일수록 우선순위가 높은 것이다-->
+		<link rel="stylesheet" href="/public/css/simple-sidebar.css">
+        
+         <!-- Custom theme -->
+		<link rel="stylesheet" href="/public/css/index.css">
+		
+        <style type="text/css">
+        
+        </style>
+        
+        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC5FfPNdhCAq_g4Ef4Z7ZAc4LzDaPrgNgw&region=KR">
+    	</script>
+        	
+        			
+    	<script type="text/javascript" src="/public/js/index.js">
+    	</script>
+    	
+    </head>
+    
+    <body>
+         
+         <!-- 위쪽 헤더 -->
+	    <nav id="header" class="navbar navbar-custom navbar-fixed-top">
+	      <div class="container">
+	      	
+	        <div class="navbar-header">
+	        
+	          <!-- 모바일 전용 버튼 -->
+	          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+	            <span class="icon-bar"></span>
+	            <span class="icon-bar"></span>
+	            <span class="icon-bar"></span>
+	          </button>
+	          
+	          <!-- 헤더 타이틀 -->
+	          <a class="navbar-brand" href="#">여행일지&nbsp;&nbsp;&nbsp;&nbsp;<div class="fb-share-button" data-href="https://travelbook-shinycoo.c9.io/#" data-layout="button"></div></a>
+	          
+	        </div>
+	        
+	        <div id="navbar" class="navbar-collapse collapse">
+	          <ul class="nav navbar-nav">
+	            <li class="active"><a href="#"><i class="fa fa-map-marker"></i>&nbsp;&nbsp;지도</a></li>
+	            <li><a href="/gallery.html"><i class="fa fa-camera"></i>&nbsp;&nbsp;갤러리</a></li>
+	          </ul>
+	          <ul class="nav navbar-nav navbar-right">
+	            <li><a href="https://www.facebook.com/?_rdr" target="_blank">&nbsp;&nbsp;<i class="fa fa-facebook"></i></i>&nbsp;&nbsp;</a></li>
+	          </ul>
+	        </div>
+	        
+	      </div>
+	    </nav>
+        
+       	<div id = "wrapper"> <!-- wrapper안에 side를 넣어주면 된다 -->
+		
+			 <!-- Sidebar -->
+	        <div id="sidebar-wrapper">
+	            <ul class="sidebar-nav">
+	                <li id="sidebar-title" class="sidebar-brand">
+	                   	여행 장소 
+	                </li>
+	                
+	                <li>
+	                	<div id="item-0" class="place-item">
+	                		<img class="place-image" src="/public/image/thumb/1.jpg">
+	                		
+	                		<div class="place-title-wrapper">
+	                			<b class="place-title">Marina Bay Sands SkyPark</b><br/>
+		                		<span class="place-subtitle">
+									Rather on the expensive side, yet totally worth it: the best…
+								</span>
+	                		</div>
+	                		
+	                	</div>
+	                </li>
+	                
+	                <li>
+	                	<div id="item-1" class="place-item">
+	                		<img class="place-image" src="/public/image/thumb/2.jpg">
+	                		
+	                		<div class="place-title-wrapper">
+	                			<b class="place-title">Art Science Museum</b><br/>
+		                		<span class="place-subtitle">
+									Rather on the expensive side, yet totally worth it: the best…
+								</span>
+	                		</div>
+	                	</div>
+	                </li>
+	               
+	                <li>
+	                	<div id="item-2" class="place-item">
+	                		<img class="place-image" src="/public/image/thumb/3.jpg">
+	                		
+	                		<div class="place-title-wrapper">
+	                			<b class="place-title">Esplanade</b><br/>
+		                		<span class="place-subtitle">
+									Rather on the expensive side, yet totally worth it: the best…
+								</span>
+	                		</div>
+	                	</div>
+	                </li>
+	               
+	                <li>
+	                	<div id="item-3" class="place-item">
+	                		<img class="place-image" src="/public/image/thumb/4.jpg">
+	                		
+	                		<div class="place-title-wrapper">
+	                			<b class="place-title">Merlion Park</b><br/>
+		                		<span class="place-subtitle">
+									Rather on the expensive side, yet totally worth it: the best…
+								</span>
+	                		</div>
+	                	</div>
+	                </li>
+	               
+	                <li>
+	                	<div id="item-4" class="place-item">
+	                		<img class="place-image" src="/public/image/thumb/5.jpg">
+	                		
+	                		<div class="place-title-wrapper">
+	                			<b class="place-title">Garden of bay</b><br/>
+		                		<span class="place-subtitle">
+									Rather on the expensive side, yet totally worth it: the best…
+								</span>
+	                		</div>
+	                	</div>
+	                </li>
+	                
+	            </ul>
+	        </div>
+	        <!-- /#sidebar-wrapper -->
+			
+			<div id ="page-content-wrapper">
+				<!--map이 그려지는 위치-->
+				<div id="map-canvas"></div>
+			</div>	
+       	</div>
+    </body>
+</html>

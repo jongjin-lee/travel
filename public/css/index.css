@@ -1,0 +1,114 @@
+ /* nav bar 배경 및 전체 속성 */
+.navbar-custom{background-color:#080808;border-color:#080808}
+
+/* nav bar 제목 */
+.navbar-custom .navbar-brand{color:#FFF}
+.navbar-custom .navbar-brand:focus,.navbar-custom .navbar-brand:hover{color:#fff;background-color:transparent}
+
+/* nav bar 내부 글자 */
+.navbar-custom .navbar-text{color:#9d9d9d}
+
+/* nav bar 내부 메뉴 버튼 */
+.navbar-custom .navbar-nav>li>a{color:#9d9d9d}
+.navbar-custom .navbar-nav>li>a:focus,.navbar-custom .navbar-nav>li>a:hover{color:#fff;background-color:transparent}
+.navbar-custom .navbar-nav>.active>a,.navbar-custom .navbar-nav>.active>a:focus,.navbar-custom .navbar-nav>.active>a:hover{color:#fff;background-color:#080808}
+.navbar-custom .navbar-nav>.disabled>a,.navbar-custom .navbar-nav>.disabled>a:focus,.navbar-custom .navbar-nav>.disabled>a:hover{color:#444;background-color:transparent}
+
+/* nav bar 모바일 메뉴 */
+.navbar-custom .navbar-toggle{border-color:#333}
+.navbar-custom .navbar-toggle:focus,.navbar-custom .navbar-toggle:hover{background-color:#333}
+.navbar-custom .navbar-toggle .icon-bar{background-color:#fff}
+
+/* nav bar 모바일 메뉴 아래 선 */
+.navbar-custom .navbar-collapse,.navbar-custom .navbar-form{border-color:#FFF}
+
+/* nav bar 내부 메뉴 중 드롭다운 */
+.navbar-custom .navbar-nav .open .dropdown-menu .divider{background-color:#080808}
+.navbar-custom .navbar-nav .open .dropdown-menu>li>a{color:#9d9d9d}
+.navbar-custom .navbar-nav .open .dropdown-menu>li>a:focus,.navbar-custom .navbar-nav .open .dropdown-menu>li>a:hover{color:#fff;background-color:transparent}
+.navbar-custom .navbar-nav .open .dropdown-menu>.active>a,.navbar-custom .navbar-nav .open .dropdown-menu>.active>a:focus,.navbar-custom .navbar-nav .open .dropdown-menu>.active>a:hover{color:#fff;background-color:#080808}
+.navbar-custom .navbar-nav .open .dropdown-menu>.disabled>a,.navbar-custom .navbar-nav .open .dropdown-menu>.disabled>a:focus,.navbar-custom .navbar-nav .open .dropdown-menu>.disabled>a:hover{color:#444;background-color:transparent}
+
+/* nav bar 내부 링크 글자 */
+.navbar-custom .navbar-link{color:#9d9d9d}
+.navbar-custom .navbar-link:hover{color:#fff}
+.navbar-custom .btn-link{color:#9d9d9d}
+.navbar-custom .btn-link:focus,.navbar-custom .btn-link:hover{color:#fff}
+.navbar-custom .btn-link[disabled]:focus,.navbar-custom .btn-link[disabled]:hover,fieldset[disabled] .navbar-custom .btn-link:focus,fieldset[disabled] .navbar-custom .btn-link:hover{color:#444}
+
+
+/* Body */
+body, html {
+  height: 100%;
+  width: 100%;
+}
+body {
+    padding-top:50px;
+    height: 100%;
+    width: 100%;
+    margin: 0; 
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+}
+#sidebar-title { color:#FFF; }
+#sidebar-close { float:left; position:absolute; z-index:9; top:60px; }
+
+
+.place-item {
+    background-color : #222222;
+    /*글자 색 : 흰색*/
+    color : #ffffff; 
+    width:100%;
+    /*위아래 아이템 간 여백*/
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.place-image {
+    /*이미지 크기 고정*/
+    width:75px;
+    height:75px;
+    /*외각선을 둥글게 : 원을 만들고싶다면 이미지의 한 변 길이의 반으로 설정해주면 동그란 이미지가 됨*/
+    border-radius:37px;
+    -webkit-border-radius:37px;
+    -moz-border-radius:37px;
+}
+
+.place-title-wrapper {
+    width:220px;
+    /* 수직으로 배열된 이미지와 텍스트를 동일선상에 나란하게 배열하는 것을 가능하게 만드는 코드 */
+    display:inline-block;
+    float:right;
+    /* 줄간격 설정 */
+    line-height:24px;
+    /* margin 설정 : 간격설정 */
+    margin-right:20px;
+
+}
+
+/* 구글맵 안뜨는 버그 고치는 코드 */
+#page-content-wrapper { padding:0px;}
+#map-canvas {
+    height: 100%;
+	width: 100%;
+	margin: 0; padding: 0;
+}
+#wrapper {
+  height: 100%;
+  width: 100%;
+}
+#page-content-wrapper {
+  height: 100%;
+  width: 100%;
+}
+
+/* 지도위에 뜨는 맵의 모양을 조정해주는 코드 */
+#map-canvas img[src^='/public/image/thumb/']{
+    border-radius: 37px;
+	-webkit-border-radius: 37px;
+	-moz-border-radius: 37px;
+    border:3px solid #FFF !important;
+}
+
+    
