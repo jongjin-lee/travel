@@ -76,4 +76,3 @@ function setMarkers(map, locations) {  // what is location? , location == spots
         })(marker,spot,i)); 
     }
 
-}
